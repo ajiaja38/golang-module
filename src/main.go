@@ -8,8 +8,7 @@ import (
 func main() {
 	fmt.Println("Hello Main Golang!")
 
-	input := []int{7, 8, 5, 2}
+	input := 1000000
 
-	resultSumTwo := service.SumTwo(input, 9)
-	fmt.Println(resultSumTwo)
+	service.LoopBillion(input)
 }

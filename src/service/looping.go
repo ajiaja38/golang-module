@@ -1,6 +1,9 @@
 package service
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type Student struct {
 	Name, Address string
@@ -42,4 +45,15 @@ func SumTwo(input []int, target int) [2]int {
 	}
 
 	return result
+}
+
+func LoopBillion(input int) {
+	value := time.Now()
+
+	for i := 1; i <= input; i++ {
+		fmt.Println(i)
+	}
+
+	elapse := time.Since(value)
+	fmt.Println(elapse)
 }
